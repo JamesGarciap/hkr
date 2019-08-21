@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+#main {
+background: #F4F4F4;
+margin: 0 auto;
+max-width: 1024px;
+}
+
+#page {
+margin-top: 5em;
+background-color: white;
+padding: 15px 3em 15px 3em;
+}
+
+.collapsible {
+background-color: #777;
+color: white;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15px;
+}
+
+.active,
+.collapsible:hover {
+background-color: #555;
+}
+
+.collapsible:after {
+content: '\002B';
+color: white;
+font-weight: bold;
+float: right;
+margin-left: 5px;
+}
+
+.active:after {
+content: "\2212";
+}
+
+.content {
+padding: 0 18px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+    </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  </head>
+  <body>
+    <div id="main">
+
+   <p>Article 1</p>
+   <button class="collapsible">Abstract</button>
+   <div class="content">
+     <p>
+
+       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sagittis lacinia neque ac bibendum. Vivamus consectetur, purus et semper vehicula, nisi nunc maximus metus, sit amet convallis metus est a nisi. Cras ut orci non lacus venenatis imperdiet.
+       Curabitur condimentum vulputate mattis. Pellentesque vitae sodales massa. Vivamus a ullamcorper nunc. Integer ultrices commodo lorem in iaculis. Nulla cursus vitae odio vitae ultricies. Donec ligula nisi, maximus quis metus ac, viverra pellentesque
+       turpis. In suscipit mi at lorem varius pulvinar. Quisque tincidunt leo sed finibus viverra. Vestibulum pharetra condimentum leo. Aliquam tortor arcu, viverra a dui et, hendrerit auctor magna. Proin dictum pulvinar lectus ac tristique. Aliquam
+       dictum condimentum massa a tincidunt. Etiam ultricies luctus finibus. Suspendisse feugiat risus cursus nisl viverra sagittis. In commodo diam tristique erat varius, ac rutrum leo molestie. Donec ut lectus tincidunt tortor vestibulum molestie nec
+       sed ante. Curabitur vitae neque laoreet, faucibus ante nec, egestas nulla. Ut id mi enim. Pellentesque posuere, dolor sit amet gravida congue, justo quam pulvinar lectus, sed malesuada quam felis sed nisi. Donec auctor purus non dolor sagittis,
+       id rutrum velit tempor. Aliquam non mattis nibh, nec feugiat metus. Vestibulum accumsan turpis est, porta tempor nunc gravida a. Nam eros ante, eleifend nec augue sit amet, feugiat auctor mauris. Nulla facilisi. Nulla eget egestas risus. Quisque
+       sit amet rutrum ligula, dictum consequat eros. Morbi elementum libero a nunc viverra, sit amet cursus sem eleifend. Praesent neque lorem, suscipit in augue id, efficitur faucibus nibh. Vivamus vel nulla at tortor feugiat sollicitudin. Phasellus
+       pharetra hendrerit massa eget ornare. Nullam tortor sapien, laoreet sed consequat at, egestas sit amet erat. Praesent in varius tellus. Ut venenatis, augue sit amet faucibus tristique, velit lacus ultrices magna, quis accumsan metus purus ultrices
+       nibh. Donec dapibus tellus eu pharetra viverra. Nullam varius mollis velit, quis consequat diam venenatis et. Maecenas interdum, velit vel gravida euismod, enim orci lobortis justo, quis lobortis libero eros venenatis est. Sed laoreet, diam at
+       tempus sollicitudin, sapien velit gravida elit, ut sodales augue elit eu elit. Morbi sit amet porta neque. Maecenas mi augue, maximus vitae facilisis at, volutpat at quam. Nunc ac ante tempus nibh ornare euismod. Curabitur sagittis egestas nunc,
+       at pretium magna blandit vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin nisl eros, rutrum ac gravida nec, gravida a erat. Morbi fringilla facilisis velit eget pharetra. Aliquam molestie,
+       tellus fermentum sagittis egestas, ex neque sodales justo, non eleifend lacus risus ut velit. </p>
+   </div>
+   <button class="collapsible">Introduction</button>
+   <div class="content">
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+   </div>
+   <button class="collapsible">Chapter 1</button>
+   <div class="content">
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     <button class="collapsible">Chapter 1.1</button>
+     <div class="content">
+       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+     </div>
+   </div>
+ </div>
+
+    <script src="./index.js" charset="utf-8"></script>
+  </body>
+</html>
